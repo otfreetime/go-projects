@@ -2,22 +2,22 @@
 #!/bin/sh
 # sudo apt-get update 
 # sudo apt-get install gnupg -y
-export PATH=$PATH:/usr/lib/go-1.11/bin
-echo $PATH
-echo "***********************************"
-export GOPATH=/project/sawtooth-seth/cli-go
-echo $GOPATH
-echo "***********************************"
-export PATH=$PATH:/project/sawtooth-seth/cli-go/bin:/project/sawtooth-seth/bin:/usr/lib/go-1.11/bin
-echo $PATH
-echo "***********************************"
+#export PATH=$PATH:/usr/lib/go-1.11/bin
+#echo $PATH
+#echo "***********************************"
+#export GOPATH=/project/sawtooth-seth/cli-go
+#echo $GOPATH
+#echo "***********************************"
+#export PATH=$PATH:/project/sawtooth-seth/cli-go/bin:/project/sawtooth-seth/bin:/usr/lib/go-1.11/bin
+#echo $PATH
+#echo "***********************************"
 
-if [ ! -z $HTTP_PROXY ] && [ -z $http_proxy ]; then \
-  http_proxy=$HTTP_PROXY; \
- fi; \
- if [ ! -z $HTTPS_PROXY ] && [ -z $https_proxy ]; then \
-  https_proxy=$HTTPS_PROXY; \
- fi
+#if [ ! -z $HTTP_PROXY ] && [ -z $http_proxy ]; then \
+#  http_proxy=$HTTP_PROXY; \
+# fi; \
+# if [ ! -z $HTTPS_PROXY ] && [ -z $https_proxy ]; then \
+#  https_proxy=$HTTPS_PROXY; \
+# fi
 echo "http_proxy: $http_proxy"
 echo "https_proxy: $https_proxy"
 echo "***********************************"
